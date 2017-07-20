@@ -361,7 +361,7 @@ label {
   width: 100%;
   top: 00;
   position: fixed;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Building_10_jamia.JPG') center center no-repeat; 
+  background: url('../images/jamia_bg_small.jpg') center center no-repeat; 
   background-size: cover;
   z-index: -100;
 }
