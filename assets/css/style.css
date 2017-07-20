@@ -8,7 +8,7 @@ body {
 }
 
 a {
-	color: #88c52e;
+	color: #7492e9;
 	cursor: pointer;
 	text-decoration: none;
 	
@@ -18,7 +18,7 @@ a {
 	transition: all .2s;
 }
 a:hover, a:focus {
-	color: #73a624;
+	color: #01579b;
 	outline: none;
 	text-decoration: none;
 }
@@ -235,10 +235,12 @@ pre {
 .panel-default:last-child {
 	margin-bottom: 25px;
 }
+/*
 .panel-default>.panel-heading {
 	background: #e9f3e3;
 	color: inherit;
 }
+*/
 .panel-default>.panel-heading+.panel-collapse .panel-body {
 	border-top:none;
 }
@@ -340,15 +342,14 @@ label {
 	-moz-box-shadow: none;
 }
 
-/*	Header
+/*	Header **EDITED BY JOY**
 	==================================================*/
 #header {
 	box-shadow: 0 0 5px rgba(0,0,0,.05);
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.05);
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,.05);
-	background-color:rgba(0,255,0,.65);
+/*	background-color:rgba(0,255,0,.00);*/
 	color:white;
-	
 	
 }
 
@@ -374,7 +375,7 @@ label {
 	font-size:20px;
 }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-	color: #000;
+	color: #1de9b6;
 }
 .navbar-inverse {
 	background-color: rgba(255, 255, 255, .9);
@@ -396,7 +397,10 @@ label {
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 	background-color: transparent;
-	color: #ff9933;
+	color: #1de9b6;
+	text-shadow: 1px 1px 1px #080d6f;
+}
+
 }
 .header-button {
 	margin-left: 15px;
@@ -412,8 +416,8 @@ label {
 }
 #hero .lp-element {
 	padding: 150px 50px;
-	background-color: rgba(0, 255, 0, .25);
-	color:#ffffff
+	background-color: rgba(34, 100, 122, 0.00);
+	color:#ffffff;
 }
 #hero h1 {
 	font-size: 80px;
@@ -652,6 +656,20 @@ label {
 	.overview p.lead {
 		margin-bottom: 40px;
 	}
+	
+	/*added by Joy*/
+	.contact-box{
+		width:50%;
+		margin-left:25%;
+	}
+	.contact-box p.lead{
+		margin: 0;
+	}
+	.stud .contact-box .lead{
+		font-size: 0.8em;
+	}
+	/*	done*/
+	
 	.service-block, .img-responsive, .carousel {
 		margin-bottom: 30px;
 	}
@@ -688,6 +706,10 @@ label {
 		margin-left: -30px;
 		margin-right: -30px;
 	}
+	.stud .contact-box .lead{
+	font-size: 0.5em;
+}
+
 	#hero h1 {
 		font-size: 38px;
 	}
@@ -709,6 +731,76 @@ label {
 	float: left;
 	margin: 0 5%;
 }
-#collapse8 li:nth-child(odd),#collapse11 li:nth-child(even){
+/*
+#collapse4{
+	background-image: url("../images/hackathons.jpg");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+*/
+.panel-collapse{
+	font-size: 1.5em;
+}
+.panel-title{
+	font-weight: bold;
+	color: #fff;
+}
+.panel-default .panel-heading{
+	background-color:#009688;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.panel-default .panel-heading:hover{
+	background-color: #006064;
+}
+#collapse8 li:nth-child(odd){
 	background-color: #D5D2D2;
+}
+.panel-heading a:hover,.panel-heading a:focus{
+	color:#80cbc4;
+}
+.panel-collapse img{
+	width: 80%;
+	transition: .5s;
+	transition-delay: .2s;
+}
+/*
+.panel-collapse img:hover{
+	width: 80%;
+}
+*/
+#tpo_msg p{
+	font-size: 1.2em;
+	text-align: center;
+}
+#tpo_msg img{
+	float: left;
+	border-radius: 20%;
+	margin: 0% 2% 2% 0%;
+}
+.contact-box{
+/*	background-color: rgba(79,179,191,0.60);*/
+	width:50%;
+	margin-left:25%;
+}
+.contact-box .lead{
+	margin: 0;
+	text-align:center;
+}
+.stud .contact-box .lead{
+	font-size: 1em;
+}
+.mynav{
+	background-color: rgba(0,0,0,0.80);
+}
+#contact h2{
+	margin: 3% 0;
+}
+#contact .stud{
+	margin: 2% 0;
+}
+.navbar-nav a{
+	text-shadow: 2px -1px 1px #000;
 }
