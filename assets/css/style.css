@@ -740,7 +740,7 @@ label {
 	
 }
 */
-.panel-collapse{
+#accordion .panel-collapse,#accordion2 .panel-collapse{
 	font-size: 1.5em;
 }
 .panel-title{
@@ -780,6 +780,9 @@ label {
 	border-radius: 20%;
 	margin: 0% 2% 2% 0%;
 }
+#contact .section1{
+	margin-top: 0;
+}
 .contact-box{
 /*	background-color: rgba(79,179,191,0.60);*/
 	width:50%;
@@ -788,6 +791,10 @@ label {
 .contact-box .lead{
 	margin: 0;
 	text-align:center;
+}
+.contact-box .post{
+	font-size: 1.2em;
+	font-style: oblique;
 }
 .stud .contact-box .lead{
 	font-size: 1em;
@@ -798,9 +805,14 @@ label {
 #contact h2{
 	margin: 3% 0;
 }
+#contact #cont{
+	margin-top: 5%;
+}
 #contact .stud{
 	margin: 2% 0;
 }
 .navbar-nav a{
 	text-shadow: 2px -1px 1px #000;
+}
+.mybtn{
 }
