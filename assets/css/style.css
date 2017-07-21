@@ -780,7 +780,7 @@ label {
 	border-radius: 20%;
 	margin: 0% 2% 2% 0%;
 }
-#contact .section1{
+#contact .section .section1{
 	margin-top: 0;
 }
 .contact-box{
@@ -815,4 +815,50 @@ label {
 	text-shadow: 2px -1px 1px #000;
 }
 .mybtn{
+}
+
+.animate{
+	opacity: 0;
+}
+
+
+/* animation added(modified) by Joy */
+
+@-webkit-keyframes slideUpSmall {
+  0% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+	opacity: 0.1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	visibility: visible;
+	opacity: 1;
+  }
+}
+
+@keyframes slideUpSmall {
+  0% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+	opacity: 0.1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	visibility: visible;
+	opacity: 1;
+  }
+}
+
+.slideUpSmall {
+  -webkit-animation-name: slideUpSmall;
+  animation-name: slideUpSmall;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
 }
