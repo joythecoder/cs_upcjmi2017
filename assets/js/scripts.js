@@ -46,7 +46,7 @@
         /*	Pretty Photo
 	================================================== */
 
-        jQuery('#gallery a').attr('rel', 'prettyPhoto');
+        jQuery('#slider a').attr('rel', 'prettyPhoto');
         jQuery("a[rel^='prettyPhoto']").prettyPhoto();
 
         /*	Bootstrap Carousel
@@ -88,3 +88,14 @@
         });
     };
 })(jQuery);
+
+/* ADDED BY JOY */
+
+$(document).ready(function(){
+	$('.navbar-logo').mouseenter(function(){
+		$(this).prop('src',"assets/images/jmi_logo1.png");
+	});
+	$('.navbar-logo').mouseleave(function(){
+		$(this).prop('src',"assets/images/jmi_logo.png");
+	});
+});
