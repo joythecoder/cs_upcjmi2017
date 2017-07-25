@@ -786,7 +786,7 @@ label {
 	-webkit-transition:all 0.3s;
 }
 #collapse5 .panel-body li:hover{
-	background-color: #00000055;
+	background-color: rgba(0,0,0,0.30);
 }
 #collapse5 .panel-body li:hover img{
 	height: 100px;
