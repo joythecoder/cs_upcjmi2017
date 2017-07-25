@@ -382,9 +382,6 @@ label {
 	
 	border: none;
 }
-.navbar-right button {
-	margin: 23px 0;
-}
 .navbar-nav>li>a {
 	padding: 30px 0;
 	margin: 0 15px;
@@ -398,7 +395,7 @@ label {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 	background-color: transparent;
 	color: #1de9b6;
-	text-shadow: 1px 1px 1px #080d6f;
+	text-shadow: 1px 1px 1px #000;
 }
 
 }
@@ -488,13 +485,16 @@ label {
 	background-color: #ecf0f1;
 }
 
+.carousel-inner img{
+	width: 80%;
+}
+
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
 }
 .carousel-control {
 	color: #88c52e;
 	opacity: 1;
-	text-shadow: none;
 }
 .carousel-control:hover {
 	color: #73a624;
@@ -620,10 +620,6 @@ label {
 	.header-button {
 		margin: 0;
 	}
-	.navbar-right button {
-		margin-top: 0;
-		margin-bottom: 50px;
-	}
 }
 @media (max-width: 767px) {
 	body {
@@ -730,7 +726,21 @@ label {
 .navbar-logo{
 	float: left;
 	margin: 0 5%;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
+.newlogo{
+	opacity: 0;
+}
+.newlogo:hover{
+	opacity: 1;
+}
+/*
+.navbar-logo:hover{
+	filter: drop-shadow(0 0 3px rgba(0,255,0,1));
+	-webkit-filter: drop-shadow(0 0 3px rgba(0,255,0,1));
+}
+*/
 /*
 #collapse4{
 	background-image: url("../images/hackathons.jpg");
@@ -741,7 +751,8 @@ label {
 }
 */
 #accordion .panel-collapse,#accordion2 .panel-collapse{
-	font-size: 1.5em;
+	font-size: 1.2em;
+	margin-left: 1%;
 }
 .panel-title{
 	font-weight: bold;
@@ -761,16 +772,25 @@ label {
 .panel-heading a:hover,.panel-heading a:focus{
 	color:#80cbc4;
 }
-.panel-collapse img{
-	width: 80%;
+#accordion .panel-collapse img{
+	height: 250px;
 	transition: .5s;
 	transition-delay: .2s;
 }
-/*
-.panel-collapse img:hover{
-	width: 80%;
+#accordion .panel-collapse img:hover{
+	height: 400px;
 }
-*/
+#collapse5 .panel-body img{
+	height: 50px;
+	transition: all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+#collapse5 .panel-body li:hover{
+	background-color: #00000055;
+}
+#collapse5 .panel-body li:hover img{
+	height: 100px;
+}
 #tpo_msg p{
 	font-size: 1.2em;
 	text-align: center;
@@ -803,24 +823,73 @@ label {
 	background-color: rgba(0,0,0,0.80);
 }
 #contact h2{
-	margin: 3% 0;
-}
-#contact #cont{
-	margin-top: 5%;
+	margin: 4% 0;
+	margin-top: 0;
 }
 #contact .stud{
 	margin: 2% 0;
 }
+
 .navbar-nav a{
-	text-shadow: 2px -1px 1px #000;
+	text-shadow: 1px -1px 5px #fff;
 }
 .mybtn{
+	margin-top: -5px;
+	padding: 5px;
+	background-color: rgb(240, 0, 0);
+	border-radius: 10%;
+	color: white;
+	font-weight: 400;
 }
-
+.mybtn:hover{
+	background-color: rgb(200,20,0);
+	color: white;
+	text-shadow: 0 0 5px #000;
+}
+.lp-element{
+	text-shadow: 2px 3px 5px #2518a2;
+}
+.lp-element .lead{
+	background-color: rgba(0,0,0,0.60);
+	background-clip: content-box;
+	font-weight: 400;
+}
+.table{
+	width: 60%;
+}
+.table tbody tr:first-child{
+	background-color: rgba(0,0,0,0.80);
+	color: #fff;
+	font-weight: 600;
+}
+.table tbody tr{
+	border-bottom-color: #000;
+	border-bottom-style: ridge;
+	border-bottom-width: medium;
+}
 .animate{
 	opacity: 0;
 }
 
+#student_achievement,#contact{
+	background-color: #9196B9;
+}
+#student_achievement h1,#student_achievement h2,#contact h2{
+	color: #000;
+	text-shadow: 0 0 3px #fff;
+	filter: drop-shadow(0 0 3px #fff);
+}
+#contact p.lead{
+	color: #fff;
+	text-shadow: 0 0 3px #000;
+}
+#contact p a{
+	color: #d5ff00;
+}
+#contact p a:hover{
+	color: #000;
+	text-shadow: 0 0 3px #fff;
+}
 
 /* animation added(modified) by Joy */
 
