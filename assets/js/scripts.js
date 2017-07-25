@@ -98,4 +98,5 @@ $(document).ready(function(){
 	$('.navbar-logo').mouseleave(function(){
 		$(this).prop('src',"assets/images/jmi_logo.png");
 	});
+	$('a').prop('target','_blank');
 });
